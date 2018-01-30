@@ -116,39 +116,94 @@ body {
 }
 
 .card_catalog {
-	width: 212px;
-	height: 280px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 348px;
+	height: 210px;
 	box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin-right: 24px;
     margin-bottom: 24px;
+
 }
 
-.card_text {
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 24px;
+.card_catalog:hover {
+	background-color: #fff;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: translateY(-6px);
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn_catalog {
+	display: none;
+	position: absolute;
+	text-decoration: none;
+  	outline: none;
+  	width: 180px;
+  	height: 48px;
+  	line-height: 45px;
+  	font-size: 11px;
+  	text-transform: uppercase;
+  	text-align: center;
+  	letter-spacing: 1px;
+  	font-weight: 600;
+  	color: #232323;
+  	border: 1px solid #232323;
+  	transition: .4s;
+}
+
+.btn_catalog:hover {
+	background: #232323;
+  	color: white;
+
+}
+
+
+.card_catalog:hover .btn_catalog {
+	display: block;
+}
+
+.card_catalog:hover .triangle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 80px 80px;
+	border-color: transparent transparent #fff transparent;
 }
 
 .card_title {
-	font-size: 16px;
+	font-size: 18px;
+	letter-spacing: 0.4px;
 	font-weight: 600;
 	line-height: 1.4em;
 	text-transform: uppercase;
 }
 
-.numbers {
-	font-family: 'Montserrat', sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	color: #FF5A00;
-}
 
 
 .flex-catalog {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+
+}
+
+.triangle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 80px 80px;
+	border-color: transparent transparent #ff5900 transparent;
+	transition: 0.3s;
 
 }
 
