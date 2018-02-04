@@ -132,7 +132,7 @@ body {
 	cursor: pointer;
 }
 
-.btn_catalog {
+.btn_card {
 	position: absolute;
 	text-decoration: none;
   	outline: none;
@@ -152,13 +152,13 @@ body {
   	transition: 0.4s;
 }
 
-.btn_catalog:hover {
+.btn_card:hover {
 	background: #232323;
   	color: white;
 }
 
 
-.card_catalog:hover .btn_catalog {
+.card_catalog:hover .btn_card {
 	bottom: 75px;
 	opacity: 1;
 }
